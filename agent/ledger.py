@@ -14,13 +14,13 @@ Event types:
   ADJUST_CREDIT  {date, amount}              use earlier overpayment against a new bill
   DISPUTE        {date, note}                shop and customer disagree on what arrived
 """
-import json
-
+import json 
+# load prices from prices.json
 
 def load_prices(path="prices.json"):
     with open(path) as f:
         return json.load(f)
-
+# it opens prices.json and combvert it to python dictioary
 
 def build_alias_map(prices):
     m = {}
@@ -29,11 +29,12 @@ def build_alias_map(prices):
         for a in info.get("aliases", []):
             m[a.lower()] = name
     return m
-
+#This handles different ways customers refer to the same product.
 
 def _num(x):
     x = round(x, 2)
     return int(x) if x == int(x) else x
+# formating number to its round of 
 
 
 def compute_ledger(events, prices):
