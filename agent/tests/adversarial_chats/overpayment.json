@@ -1,0 +1,10 @@
+{
+  "expected": {
+    "total_billed": 100,
+    "total_paid": 120,
+    "balance": 0,
+    "credit": 20,
+    "payment_status": "overpaid"
+  }
+}
+

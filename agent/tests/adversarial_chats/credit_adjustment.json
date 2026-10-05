@@ -1,0 +1,9 @@
+{
+  "expected": {
+    "total_billed": 130,
+    "total_paid": 120,
+    "balance": 10,
+    "credit": 0,
+    "payment_status": "partial"
+  }
+}

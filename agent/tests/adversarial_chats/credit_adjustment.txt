@@ -1,0 +1,7 @@
+[2026-10-10 10:00] Customer: 2 kilo carrot dena
+[2026-10-10 10:30] Shop: delivered
+[2026-10-10 18:00] Customer: 120 rs gpay kar diye
+[2026-10-11 10:00] Customer: 1 kilo aloo dena
+[2026-10-11 10:30] Shop: delivered
+[2026-10-11 18:00] Customer: extra 20 rs isme adjust kar lena
+

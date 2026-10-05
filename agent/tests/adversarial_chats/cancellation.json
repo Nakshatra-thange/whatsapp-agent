@@ -1,0 +1,9 @@
+{
+  "expected": {
+    "total_billed": 0,
+    "total_paid": 0,
+    "balance": 0,
+    "payment_status": "not_applicable"
+  }
+}
+

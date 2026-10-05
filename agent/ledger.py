@@ -63,9 +63,9 @@ def compute_ledger(events, prices):
             pending = {"date": e["date"], "items": [dict(i) for i in e["items"]]}
         elif t == "SUBSTITUTE":
             for i in pending["items"]:
-                if i["item"] == e["from"]:
-                    i["item"] = e["to"]
-                    i["unit"] = prices[e["to"]]["unit"]
+                if i["item"] == e["from_item"]:
+                    i["item"] = e["to_item"]
+                    i["unit"] = prices[e["to_item"]]["unit"]
         elif t == "CANCEL":
             if pending is None:
                 human.append("cancel after delivery or without an order")

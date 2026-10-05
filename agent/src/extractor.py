@@ -5,10 +5,12 @@ from datetime import datetime
 from anthropic import Anthropic
 from dotenv import load_dotenv
 
-from .schemas import ExtractionResult
+from .schema import ExtractionResult
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv("agent/.env")
+load_dotenv(BASE_DIR / ".env")
 
 client = Anthropic(
     api_key=os.getenv("ANTHROPIC_API_KEY")

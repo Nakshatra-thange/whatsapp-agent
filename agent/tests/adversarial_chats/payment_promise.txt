@@ -1,0 +1,3 @@
+[2026-10-06 10:00] Customer: 2 kilo aloo dena
+[2026-10-06 10:30] Shop: delivered
+[2026-10-06 18:00] Customer: payment kal kar dunga bhaiya

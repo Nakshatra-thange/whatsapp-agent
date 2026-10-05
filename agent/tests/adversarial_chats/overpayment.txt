@@ -1,0 +1,4 @@
+[2026-10-09 10:00] Customer: 2 kilo carrot dena
+[2026-10-09 10:30] Shop: delivered
+[2026-10-09 18:00] Customer: 120 rs gpay kar diye
+

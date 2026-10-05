@@ -1,0 +1,4 @@
+[2026-10-13 10:00] Customer: 1 kilo cucumber aur 1 kilo carrot dena
+[2026-10-13 10:30] Shop: delivered
+[2026-10-13 18:00] Customer: carrot nahi aaya bhaiya
+

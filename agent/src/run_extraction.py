@@ -5,7 +5,7 @@ from src.extractor import extract_events
 from src.validator import validate_and_normalize
 
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 def main():

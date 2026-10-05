@@ -1,0 +1,7 @@
+{
+  "expected": {
+    "total_paid": 0,
+    "balance": 60,
+    "payment_status": "unpaid"
+  }
+}
