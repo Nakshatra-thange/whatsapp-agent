@@ -1,0 +1,58 @@
+{
+  "customer": "Deepak",
+  "chat_file": "chats/deepak.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "garam masala",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "pav bhaji masala",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "chaat masala",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 50
+    },
+    {
+      "date": "2026-10-06",
+      "type": "PAYMENT",
+      "amount": 25
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 95,
+    "known_billed": 95,
+    "total_paid": 75,
+    "balance": 20,
+    "credit": 0,
+    "payment_status": "partial",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

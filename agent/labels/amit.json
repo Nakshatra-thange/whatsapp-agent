@@ -1,0 +1,53 @@
+{
+  "customer": "Amit",
+  "chat_file": "chats/amit.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "maggi",
+          "qty": 1,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "yippee",
+          "qty": 2,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "ketchup",
+          "qty": 1,
+          "unit": "bottle",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 100
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 145,
+    "known_billed": 145,
+    "total_paid": 100,
+    "balance": 45,
+    "credit": 0,
+    "payment_status": "partial",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

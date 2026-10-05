@@ -1,0 +1,48 @@
+{
+  "customer": "Rohit",
+  "chat_file": "chats/rohit.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "orange",
+          "qty": 2,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "banana",
+          "qty": 1,
+          "unit": "dozen",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "watermelon",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "CANCEL"
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 0,
+    "known_billed": 0,
+    "total_paid": 0,
+    "balance": 0,
+    "credit": 0,
+    "payment_status": "not_applicable",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

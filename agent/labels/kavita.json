@@ -1,0 +1,53 @@
+{
+  "customer": "Kavita",
+  "chat_file": "chats/kavita.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "nirma",
+          "qty": 1,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "soap",
+          "qty": 2,
+          "unit": "bar",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "toothpaste",
+          "qty": 1,
+          "unit": "tube",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PROMISE",
+      "amount": null
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 190,
+    "known_billed": 190,
+    "total_paid": 0,
+    "balance": 190,
+    "credit": 0,
+    "payment_status": "unpaid",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "customer": "Sharma ji",
+  "chat_file": "chats/sharma_ji.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "kothimbir",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "cucumber",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "tamatar",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PROMISE",
+      "amount": 45
+    },
+    {
+      "date": "2026-10-09",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "aloo",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-09",
+      "type": "PAYMENT",
+      "amount": 30
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 120,
+    "known_billed": 120,
+    "total_paid": 30,
+    "balance": 90,
+    "credit": 0,
+    "payment_status": "partial",
+    "needs_clarification": false,
+    "needs_human": true,
+    "reasons": [
+      "payment of 30 on 2026-10-09 could match 2 open invoices; allocation ambiguous"
+    ]
+  }
+}

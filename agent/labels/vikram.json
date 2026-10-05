@@ -1,0 +1,45 @@
+{
+  "customer": "Vikram",
+  "chat_file": "chats/vikram.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-08",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "tamatar",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "type": "SUBSTITUTE",
+      "from": "tamatar",
+      "to": "hybrid tamatar"
+    },
+    {
+      "date": "2026-10-08",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-08",
+      "type": "PAYMENT",
+      "amount": 45
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 45,
+    "known_billed": 45,
+    "total_paid": 45,
+    "balance": 0,
+    "credit": 0,
+    "payment_status": "paid",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

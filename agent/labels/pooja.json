@@ -1,0 +1,75 @@
+{
+  "customer": "Pooja",
+  "chat_file": "chats/pooja.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "kothimbir",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "hari mirchi",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "nimbu",
+          "qty": 1,
+          "unit": "piece",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 50
+    },
+    {
+      "date": "2026-10-06",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "aloo",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-06",
+      "type": "ADJUST_CREDIT",
+      "amount": 25
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 55,
+    "known_billed": 55,
+    "total_paid": 50,
+    "balance": 5,
+    "credit": 0,
+    "payment_status": "partial",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

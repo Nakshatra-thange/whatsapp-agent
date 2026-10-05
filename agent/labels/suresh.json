@@ -1,0 +1,53 @@
+{
+  "customer": "Suresh",
+  "chat_file": "chats/suresh.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "basmati rice",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "dal",
+          "qty": 1,
+          "unit": "kg",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "sunflower oil",
+          "qty": 1,
+          "unit": "litre",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PROMISE",
+      "amount": null
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 340,
+    "known_billed": 340,
+    "total_paid": 0,
+    "balance": 340,
+    "credit": 0,
+    "payment_status": "unpaid",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

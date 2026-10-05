@@ -1,0 +1,53 @@
+{
+  "customer": "Meena",
+  "chat_file": "chats/meena.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "hair oil",
+          "qty": 1,
+          "unit": "bottle",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "shampoo",
+          "qty": 2,
+          "unit": "bottle",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "soap",
+          "qty": 3,
+          "unit": "bar",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PROMISE",
+      "amount": null
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 445,
+    "known_billed": 445,
+    "total_paid": 0,
+    "balance": 445,
+    "credit": 0,
+    "payment_status": "unpaid",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

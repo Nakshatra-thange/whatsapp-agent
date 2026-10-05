@@ -1,242 +1,50 @@
 {
-    "kothimbir": {
-      "price": 10,
-      "unit": "pack",
-      "aliases": ["dhaniya", "coriander", "coriander leaves"]
-    },
-    "hari mirchi": {
-      "price": 10,
-      "unit": "pack",
-      "aliases": ["green chilli", "green chillies"]
-    },
-    "nimbu": {
-      "price": 5,
-      "unit": "piece",
-      "aliases": ["lemon"]
-    },
-    "cucumber": {
-      "price": 40,
-      "unit": "kg",
-      "aliases": ["kheera", "kakdi"]
-    },
-    "tamatar": {
-      "price": 40,
-      "unit": "kg",
-      "aliases": ["tomato", "tomatoes"]
-    },
-    "hybrid tamatar": {
-      "price": 45,
-      "unit": "kg",
-      "aliases": ["hybrid tomato", "hybrid tomatoes"]
-    },
-    "aloo": {
-      "price": 30,
-      "unit": "kg",
-      "aliases": ["potato", "batata"]
-    },
-    "pyaz": {
-      "price": 35,
-      "unit": "kg",
-      "aliases": ["onion", "onions", "kanda"]
-    },
-    "carrot": {
-      "price": 50,
-      "unit": "kg",
-      "aliases": ["gajar"]
-    },
-    "capsicum": {
-      "price": 80,
-      "unit": "kg",
-      "aliases": ["shimla mirch", "bell pepper"]
-    },
-    "mango": {
-      "price": 120,
-      "unit": "dozen",
-      "aliases": ["aam"]
-    },
-    "apple": {
-      "price": 150,
-      "unit": "kg",
-      "aliases": ["apples", "seb"]
-    },
-    "banana": {
-      "price": 50,
-      "unit": "dozen",
-      "aliases": ["bananas", "kela"]
-    },
-    "grapes": {
-      "price": 100,
-      "unit": "kg",
-      "aliases": ["angoor"]
-    },
-    "orange": {
-      "price": 80,
-      "unit": "kg",
-      "aliases": ["oranges", "santra"]
-    },
-    "watermelon": {
-      "price": 40,
-      "unit": "kg",
-      "aliases": ["watermelons", "tarbooz"]
-    },
-    "atta": {
-      "price": 45,
-      "unit": "kg",
-      "aliases": ["wheat flour", "aata"]
-    },
-    "basmati rice": {
-      "price": 90,
-      "unit": "kg",
-      "aliases": ["basmati", "basmati chawal"]
-    },
-    "rice": {
-      "price": 55,
-      "unit": "kg",
-      "aliases": ["chawal"]
-    },
-    "moong dal": {
-      "price": 120,
-      "unit": "kg",
-      "aliases": ["moong", "mung dal"]
-    },
-    "dal": {
-      "price": 110,
-      "unit": "kg",
-      "aliases": ["dal", "lentils"]
-    },
-    "sugar": {
-      "price": 50,
-      "unit": "kg",
-      "aliases": ["chini", "cheeni"]
-    },
-    "sunflower oil": {
-      "price": 140,
-      "unit": "litre",
-      "aliases": ["oil", "cooking oil", "tel", "sunflower"]
-    },
-    "milk": {
-      "price": 30,
-      "unit": "litre",
-      "aliases": ["doodh", "milk packet"]
-    },
-    "bread": {
-      "price": 40,
-      "unit": "packet",
-      "aliases": ["bread packet"]
-    },
-    "butter": {
-      "price": 60,
-      "unit": "pack",
-      "aliases": ["makhan"]
-    },
-    "paneer": {
-      "price": 100,
-      "unit": "250g",
-      "aliases": ["cottage cheese"]
-    },
-    "eggs": {
-      "price": 7,
-      "unit": "piece",
-      "aliases": ["egg", "anda", "ande"]
-    },
-    "garam masala": {
-      "price": 30,
-      "unit": "pack",
-      "aliases": ["garam masala packet"]
-    },
-    "pav bhaji masala": {
-      "price": 35,
-      "unit": "pack",
-      "aliases": ["pav bhaji masala packet"]
-    },
-    "chaat masala": {
-      "price": 30,
-      "unit": "pack",
-      "aliases": ["chaat masala packet"]
-    },
-    "maggi": {
-      "price": 15,
-      "unit": "packet",
-      "aliases": ["maggi noodles", "noodles"]
-    },
-    "yippee": {
-      "price": 15,
-      "unit": "packet",
-      "aliases": ["yippee noodles"]
-    },
-    "ketchup": {
-      "price": 100,
-      "unit": "bottle",
-      "aliases": ["tomato ketchup", "sauce"]
-    },
-    "parle-g": {
-      "price": 10,
-      "unit": "packet",
-      "aliases": ["parle g", "parleg"]
-    },
-    "glucose biscuit": {
-      "price": 20,
-      "unit": "packet",
-      "aliases": ["glucose biscuits", "biscuits"]
-    },
-    "dairy milk": {
-      "price": 40,
-      "unit": "bar",
-      "aliases": ["dairymilk", "chocolate"]
-    },
-    "nirma": {
-      "price": 30,
-      "unit": "packet",
-      "aliases": ["nirma powder", "washing powder"]
-    },
-    "surf excel": {
-      "price": 65,
-      "unit": "packet",
-      "aliases": ["surf", "surf excel packet"]
-    },
-    "vim bar": {
-      "price": 10,
-      "unit": "bar",
-      "aliases": ["vim"]
-    },
-    "dishwash liquid": {
-      "price": 120,
-      "unit": "bottle",
-      "aliases": ["dish washing liquid", "dishwasher liquid"]
-    },
-    "detergent": {
-      "price": 100,
-      "unit": "packet",
-      "aliases": ["detergent powder", "washing detergent"]
-    },
-    "fabric conditioner": {
-      "price": 150,
-      "unit": "bottle",
-      "aliases": ["fabric softener", "softener"]
-    },
-    "brush for clothes": {
-      "price": 40,
-      "unit": "piece",
-      "aliases": ["clothes brush", "washing brush"]
-    },
-    "soap": {
-      "price": 35,
-      "unit": "bar",
-      "aliases": ["soaps", "bathing soap"]
-    },
-    "toothpaste": {
-      "price": 90,
-      "unit": "tube",
-      "aliases": ["tooth paste"]
-    },
-    "hair oil": {
-      "price": 100,
-      "unit": "bottle",
-      "aliases": ["hair oil bottle"]
-    },
-    "shampoo": {
-      "price": 120,
-      "unit": "bottle",
-      "aliases": ["shampoo bottle"]
-    }
+    "kothimbir": {"price": 10, "unit": "pack", "aliases": ["dhaniya", "coriander", "coriander leaves"]},
+    "hari mirchi": {"price": 10, "unit": "pack", "aliases": ["green chilli", "green chillies"]},
+    "nimbu": {"price": 5, "unit": "piece", "aliases": ["lemon"]},
+    "cucumber": {"price": 40, "unit": "kg", "aliases": ["kheera", "kakdi"]},
+    "tamatar": {"price": 40, "unit": "kg", "aliases": ["tomato", "tomatoes"]},
+    "hybrid tamatar": {"price": 45, "unit": "kg", "aliases": ["hybrid tomato"]},
+    "aloo": {"price": 30, "unit": "kg", "aliases": ["potato", "batata"]},
+    "pyaz": {"price": 35, "unit": "kg", "aliases": ["onion", "onions", "kanda"]},
+    "carrot": {"price": 50, "unit": "kg", "aliases": ["gajar"]},
+    "capsicum": {"price": 80, "unit": "kg", "aliases": ["shimla mirch", "bell pepper"]},
+    "mango": {"price": 120, "unit": "dozen", "aliases": ["aam"]},
+    "apple": {"price": 150, "unit": "kg", "aliases": ["apples", "seb"]},
+    "banana": {"price": 50, "unit": "dozen", "aliases": ["bananas", "kela"]},
+    "grapes": {"price": 100, "unit": "kg", "aliases": ["angoor"]},
+    "orange": {"price": 80, "unit": "kg", "aliases": ["oranges", "santra"]},
+    "watermelon": {"price": 40, "unit": "kg", "aliases": ["tarbooz"]},
+    "atta": {"price": 45, "unit": "kg", "aliases": ["wheat flour", "aata"]},
+    "basmati rice": {"price": 90, "unit": "kg", "aliases": ["basmati", "basmati chawal"]},
+    "rice": {"price": 55, "unit": "kg", "aliases": ["chawal"]},
+    "moong dal": {"price": 120, "unit": "kg", "aliases": ["moong", "mung dal"]},
+    "dal": {"price": 110, "unit": "kg", "aliases": ["daal", "lentils"]},
+    "sugar": {"price": 50, "unit": "kg", "aliases": ["chini", "cheeni"]},
+    "sunflower oil": {"price": 140, "unit": "litre", "aliases": ["oil", "cooking oil", "tel"]},
+    "milk": {"price": 30, "unit": "packet", "aliases": ["doodh", "milk packet"]},
+    "bread": {"price": 40, "unit": "packet", "aliases": ["bread packet"]},
+    "butter": {"price": 60, "unit": "pack", "aliases": ["makhan"]},
+    "paneer": {"price": 100, "unit": "250g", "aliases": ["cottage cheese"]},
+    "eggs": {"price": 7, "unit": "piece", "aliases": ["egg", "anda", "ande"]},
+    "garam masala": {"price": 30, "unit": "pack", "aliases": []},
+    "pav bhaji masala": {"price": 35, "unit": "pack", "aliases": []},
+    "chaat masala": {"price": 30, "unit": "pack", "aliases": []},
+    "maggi": {"price": 15, "unit": "packet", "aliases": ["maggi noodles"]},
+    "yippee": {"price": 15, "unit": "packet", "aliases": ["yippee noodles"]},
+    "ketchup": {"price": 100, "unit": "bottle", "aliases": ["tomato ketchup", "sauce"]},
+    "parle-g": {"price": 10, "unit": "packet", "aliases": ["parle g", "parleg"]},
+    "glucose biscuit": {"price": 20, "unit": "packet", "aliases": ["glucose biscuits"]},
+    "dairy milk": {"price": 40, "unit": "bar", "aliases": ["dairymilk", "chocolate"]},
+    "nirma": {"price": 30, "unit": "packet", "aliases": ["nirma powder", "washing powder"]},
+    "surf excel": {"price": 65, "unit": "packet", "aliases": ["surf"]},
+    "vim bar": {"price": 10, "unit": "bar", "aliases": ["vim"]},
+    "dishwash liquid": {"price": 120, "unit": "bottle", "aliases": ["dish washing liquid"]},
+    "detergent": {"price": 100, "unit": "packet", "aliases": ["detergent powder"]},
+    "fabric conditioner": {"price": 150, "unit": "bottle", "aliases": ["fabric softener", "softener"]},
+    "brush for clothes": {"price": 40, "unit": "piece", "aliases": ["clothes brush", "kapde ka brush"]},
+    "soap": {"price": 35, "unit": "bar", "aliases": ["soaps", "bathing soap"]},
+    "toothpaste": {"price": 90, "unit": "tube", "aliases": ["tooth paste"]},
+    "hair oil": {"price": 100, "unit": "bottle", "aliases": []},
+    "shampoo": {"price": 120, "unit": "bottle", "aliases": []}
   }

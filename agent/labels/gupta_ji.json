@@ -1,0 +1,48 @@
+{
+  "customer": "Gupta ji",
+  "chat_file": "chats/gupta_ji.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "garam masala",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": true,
+          "reason": "size not specified ('chhota'); price list has one size"
+        },
+        {
+          "item": "pav bhaji masala",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 65
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": null,
+    "known_billed": 35,
+    "total_paid": 65,
+    "balance": null,
+    "credit": null,
+    "payment_status": "unknown",
+    "needs_clarification": true,
+    "needs_human": false,
+    "reasons": [
+      "garam masala: size not specified ('chhota'); price list has one size"
+    ]
+  }
+}

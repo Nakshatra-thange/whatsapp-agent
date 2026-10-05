@@ -1,0 +1,78 @@
+{
+  "customer": "Sunil",
+  "chat_file": "chats/sunil.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "surf excel",
+          "qty": 2,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "vim bar",
+          "qty": 1,
+          "unit": "bar",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "dishwash liquid",
+          "qty": 1,
+          "unit": "bottle",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 210
+    },
+    {
+      "date": "2026-10-07",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "surf excel",
+          "qty": 2,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "DISPUTE",
+      "note": "customer says 1 of 2 surf excel delivered; invoice (130 vs 65) cannot be determined"
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 390,
+    "known_billed": 390,
+    "total_paid": 210,
+    "balance": null,
+    "credit": null,
+    "payment_status": "disputed",
+    "needs_clarification": false,
+    "needs_human": true,
+    "reasons": [
+      "customer says 1 of 2 surf excel delivered; invoice (130 vs 65) cannot be determined"
+    ],
+    "balance_excluding_disputed": 50
+  }
+}

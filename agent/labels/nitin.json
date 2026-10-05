@@ -1,0 +1,53 @@
+{
+  "customer": "Nitin",
+  "chat_file": "chats/nitin.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "detergent",
+          "qty": 1,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "fabric conditioner",
+          "qty": 1,
+          "unit": "bottle",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "brush for clothes",
+          "qty": 1,
+          "unit": "piece",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 290
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 290,
+    "known_billed": 290,
+    "total_paid": 290,
+    "balance": 0,
+    "credit": 0,
+    "payment_status": "paid",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}

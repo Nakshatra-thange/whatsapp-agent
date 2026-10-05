@@ -1,0 +1,85 @@
+{
+  "customer": "Seema",
+  "chat_file": "chats/seema.txt",
+  "expected_events": [
+    {
+      "date": "2026-10-05",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "bread",
+          "qty": 1,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "milk",
+          "qty": 2,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "butter",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "type": "DELIVERED"
+    },
+    {
+      "date": "2026-10-05",
+      "type": "PAYMENT",
+      "amount": 160
+    },
+    {
+      "date": "2026-10-06",
+      "type": "ORDER",
+      "items": [
+        {
+          "item": "bread",
+          "qty": 1,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "milk",
+          "qty": 2,
+          "unit": "packet",
+          "needs_clarification": false,
+          "reason": null
+        },
+        {
+          "item": "butter",
+          "qty": 1,
+          "unit": "pack",
+          "needs_clarification": false,
+          "reason": null
+        }
+      ],
+      "resolved_from": "2026-10-05"
+    },
+    {
+      "date": "2026-10-06",
+      "type": "DELIVERED"
+    }
+  ],
+  "expected_ledger": {
+    "total_billed": 320,
+    "known_billed": 320,
+    "total_paid": 160,
+    "balance": 160,
+    "credit": 0,
+    "payment_status": "partial",
+    "needs_clarification": false,
+    "needs_human": false,
+    "reasons": []
+  }
+}
