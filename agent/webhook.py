@@ -77,6 +77,9 @@ async def webhook(request: Request):
         print("\n=== AGENT RESPONSE ===")
         print(reply)
 
+        from kapso_client import send_whatsapp_message
+        send_whatsapp_message(to=sender,body=reply)
+
         return {"status": "processed"}
 
     except Exception:
