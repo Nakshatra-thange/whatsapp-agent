@@ -7,7 +7,7 @@ from pathlib import Path
 load_dotenv()
 
 KAPSO_API_KEY = os.getenv("KAPSO_API_KEY")
-PHONE_NUMBER_ID = "597907523413541"
+PHONE_NUMBER_ID = os.getenv("KAPSO_PHONE_NUMBER_ID", "597907523413541")
 
 API_URL = (
     f"https://api.kapso.ai/meta/whatsapp/v24.0/"
@@ -38,7 +38,7 @@ def send_whatsapp_message(to: str, body: str):
     if not response.ok:
         raise RuntimeError(
             f"Kapso API error {response.status_code}: "
-            f"{response.text}"
+            f"{response.text[:300]}"
         )
 
     return response.json()
@@ -71,7 +71,7 @@ def send_whatsapp_image(to: str, image_path: str, caption: str):
 
     if not upload.ok:
         raise RuntimeError(
-            f"QR upload failed: {upload.status_code} {upload.text}"
+            f"QR upload failed: {upload.status_code} {upload.text[:300]}"
         )
 
     media_id = upload.json()["id"]
@@ -97,7 +97,7 @@ def send_whatsapp_image(to: str, image_path: str, caption: str):
 
     if not response.ok:
         raise RuntimeError(
-            f"QR send failed: {response.status_code} {response.text}"
+            f"QR send failed: {response.status_code} {response.text[:300]}"
         )
 
     return response.json()

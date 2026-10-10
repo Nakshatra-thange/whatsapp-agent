@@ -53,10 +53,13 @@ CANCEL:
 Order is cancelled before delivery.
 
 DELIVERED:
-Shop explicitly confirms delivery.
+A line written by the Shop explicitly confirms delivery.
+Never emit DELIVERED for a Customer's message ("delivered", "ho gaya",
+"mil gaya"): a customer cannot confirm the shop's delivery.
 
 PAYMENT:
-Customer explicitly says money was sent.
+Customer explicitly says money was sent. This is only a claim;
+the shop verifies money separately.
 
 PROMISE:
 Customer says they will pay later.
@@ -71,6 +74,11 @@ or what arrived differs from what was ordered.
 
 Dates must be ISO format YYYY-MM-DD.
 
+Example: "Bhaiya, 2 kilo aloo dena" -> ORDER with
+items [{item: "aloo", qty: 2, unit: "kg", needs_clarification: false}].
+Use the customer's stated unit; if no quantity is stated, set qty null
+and needs_clarification true.
+
 Return structured events only.
 """
 
@@ -80,9 +88,14 @@ def extract_events(
     rules: str,
     prices: dict,
     max_retries: int = 1,
+    context: str = "",
 ):
     """
     Extract events from one WhatsApp chat.
+
+    If `context` is given, it holds earlier messages that were already
+    processed. They help interpret `chat` (e.g. an answer to a
+    clarification question) but must not produce events again.
 
     Returns:
         ExtractionResult
@@ -111,6 +124,19 @@ Here is the WhatsApp conversation:
 --- END CHAT ---
 
 Extract the events from this conversation.
+"""
+
+    if context:
+        prompt = f"""
+{prompt}
+Earlier messages from the same customer are below. They were ALREADY
+processed. Use them only to understand the conversation above (for
+example, if the customer is now answering a clarification question,
+emit the complete ORDER). Do NOT emit events for these earlier messages.
+
+--- EARLIER MESSAGES (context only) ---
+{context}
+--- END EARLIER MESSAGES ---
 """
 
     for attempt in range(max_retries + 1):

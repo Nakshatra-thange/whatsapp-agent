@@ -56,6 +56,24 @@ def process_chat(chat):
     }
 
 
+def extract_customer_events(message, date, history=""):
+    """
+    Extract events from ONE new customer message.
+
+    `history` holds earlier messages as context only, so replaying the
+    conversation never re-creates orders or payments. Returns raw event
+    dicts; src/shop.py validates items and decides what is trusted.
+    """
+
+    extraction = extract_events(
+        chat=f"[{date}] Customer: {message}",
+        rules=load_rules(),
+        prices=load_json("prices.json"),
+        context=history,
+    )
+    return extraction.model_dump()["events"]
+
+
 if __name__ == "__main__":
 
     chat = """

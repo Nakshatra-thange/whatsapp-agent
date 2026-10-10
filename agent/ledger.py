@@ -6,7 +6,7 @@ This file turns events into a customer ledger. No LLM, no guessing, just arithme
 
 Event types:
   ORDER          {date, items:[{item, qty, unit, needs_clarification, reason}]}
-  SUBSTITUTE     {date, from, to}            customer accepted a replacement
+  SUBSTITUTE     {date, from_item, to_item}  customer accepted a replacement
   CANCEL         {date}                      order cancelled before delivery
   DELIVERED      {date}
   PAYMENT        {date, amount}              money actually sent
@@ -62,6 +62,9 @@ def compute_ledger(events, prices):
         if t == "ORDER":
             pending = {"date": e["date"], "items": [dict(i) for i in e["items"]]}
         elif t == "SUBSTITUTE":
+            if pending is None:
+                human.append("substitution without a pending order")
+                continue
             for i in pending["items"]:
                 if i["item"] == e["from_item"]:
                     i["item"] = e["to_item"]

@@ -18,8 +18,8 @@
     {
       "date": "2026-10-08",
       "type": "SUBSTITUTE",
-      "from": "tamatar",
-      "to": "hybrid tamatar"
+      "from_item": "tamatar",
+      "to_item": "hybrid tamatar"
     },
     {
       "date": "2026-10-08",
